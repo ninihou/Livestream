@@ -3,7 +3,7 @@ package com.example.livestream.member;
 import java.io.Serializable;
 
 public class Member implements Serializable {
-    private String userid;
+    private String account;
     private String password;
     private String name;
     private String email;
@@ -12,20 +12,20 @@ public class Member implements Serializable {
         super();
     }
 
-    public Member(String userid, String password, String name, String email) {
+    public Member(String account, String password, String name, String email) {
         super();
-        this.userid = userid;
+        this.account = account;
         this.password = password;
         this.name = name;
         this.email = email;
     }
 
-    public String getUserid() {
-        return userid;
+    public String getAccount() {
+        return account;
     }
 
-    public void setUserid(String userid) {
-        this.userid = userid;
+    public void setAccount(String account) {
+        this.account = account;
     }
 
     public String getPassword() {

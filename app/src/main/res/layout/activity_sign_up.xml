@@ -23,8 +23,8 @@
 
     <Button
         android:id="@+id/btnSubmit"
-        android:layout_width="250dp"
-        android:layout_height="60dp"
+        android:layout_width="218dp"
+        android:layout_height="53dp"
         android:layout_marginTop="580dp"
         android:layout_marginBottom="35dp"
         android:background="@drawable/signup_button"
@@ -35,8 +35,10 @@
 
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -55,13 +57,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="92dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="106dp"
         android:ems="10"
         android:hint="@string/email"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etName" />
 
@@ -73,7 +75,7 @@
         android:layout_marginEnd="106dp"
         android:layout_marginBottom="22dp"
         android:ems="10"
-        android:hint="@string/userId"
+        android:hint="@string/account"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/etPassword"
         app:layout_constraintEnd_toEndOf="parent"
@@ -117,19 +119,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="92dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="106dp"
         android:ems="10"
         android:hint="@string/password2"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etPassword" />
 
     <ScrollView
-        android:layout_width="209dp"
-        android:layout_height="31dp"
+        android:layout_width="346dp"
+        android:layout_height="50dp"
         app:layout_constraintBottom_toTopOf="@+id/btnSubmit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

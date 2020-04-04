@@ -57,7 +57,7 @@ public class signUpActivity extends AppCompatActivity {
                         String url = Util.URL + "MemberServlet";
                         JsonObject jsonObject = new JsonObject();
                         jsonObject.addProperty("action", "isUserIdExist");
-                        jsonObject.addProperty("userId", etUserId.getText().toString());
+                        jsonObject.addProperty("account", etUserId.getText().toString());
                         String jsonOut = jsonObject.toString();
                         memberExistTask = new CommonTask(url, jsonOut);
                         try {
@@ -80,7 +80,7 @@ public class signUpActivity extends AppCompatActivity {
     }
 
     public void onSubmitClick(View view){
-        String userId = etUserId.getText().toString().trim();
+        String account = etUserId.getText().toString().trim();
         String password = etPassword.getText().toString().trim();
         String confirmPassword = etConfirmPassword.getText().toString().trim();
         String name = etName.getText().toString().trim();
@@ -92,8 +92,8 @@ public class signUpActivity extends AppCompatActivity {
             message += getString(R.string.msg_UserIdExist) + "\n";
             isInputValid = false;
         }
-        if (userId.isEmpty()){
-            message += "User ID" + "" + "Cannot be empty" + "\n";
+        if (account.isEmpty()){
+            message += "Account" + "" + "Cannot be empty" + "\n";
             isInputValid = false;
         }
         if (password.isEmpty()) {
@@ -116,7 +116,7 @@ public class signUpActivity extends AppCompatActivity {
             isInputValid = false;
         }
         tvMessage.setText(message);
-        Member member = new Member(userId, password, name, email);
+        Member member = new Member(account, password, name, email);
         if (isInputValid) {
             if (Util.networkConnected(this)) {
                 String url = Util.URL + "MemberServlet";
@@ -139,7 +139,7 @@ public class signUpActivity extends AppCompatActivity {
                     SharedPreferences preferences = getSharedPreferences(
                             Util.PREF_FILE, MODE_PRIVATE);
                     preferences.edit().putBoolean("login", true)
-                            .putString("userId", userId)
+                            .putString("account", account)
                             .putString("password", password).apply();
                     Util.showToast(this, R.string.msg_SuccessfullyCreateAccount);
                     Intent intent = new Intent(this, MainActivity.class);//where to turn~~~

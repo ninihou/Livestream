@@ -4,7 +4,7 @@
     <string name="lsArea">直播專區</string>
     <string name="isMember">已為會員?</string>
     <string name="signUp">註冊</string>
-    <string name="userId">帳號</string>
+    <string name="account">帳號</string>
     <string name="password">密碼</string>
     <string name="password2">再次輸入密碼</string>
     <string name="email">Email</string>
