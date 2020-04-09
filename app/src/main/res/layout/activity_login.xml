@@ -153,8 +153,8 @@
 
     <TextView
         android:id="@+id/tvMessage"
-        android:layout_width="163dp"
-        android:layout_height="29dp"
+        android:layout_width="290dp"
+        android:layout_height="52dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
@@ -166,9 +166,10 @@
         android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/btnLogin"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.26"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.411" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

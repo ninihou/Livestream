@@ -2,6 +2,7 @@ package com.example.livestream.main;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -53,6 +54,15 @@ public class MainActivity extends AppCompatActivity {
 
     public void onLoginClick(View view) {
         Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+    }
+
+    public void onLogoutClick(View view){
+        SharedPreferences pref = getSharedPreferences(Util.PREF_FILE,
+                MODE_PRIVATE);
+        pref.edit().putBoolean("login", false).apply();
+//        view.setVisibility(View.INVISIBLE);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 
