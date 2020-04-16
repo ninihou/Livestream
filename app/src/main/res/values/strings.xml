@@ -1,4 +1,5 @@
 <resources>
+    <string name="dtime">日期時間</string>
     <string name="app_name">直播</string>
     <string name="search_hint">搜尋廚師或直播</string>
     <string name="lsArea">直播專區</string>
@@ -19,13 +20,25 @@
     <string name="fans">粉絲</string>
     <string name="follow">追蹤</string>
     <string name="name">姓名</string>
+    <string name="upload">上傳檔案</string>
+    <string name="trailer">直播預告</string>
+    <string name="trailerpic">上傳直播預告圖片</string>
+
+    <string name="lstitle">直播主題</string>
+    <string name="lsintro">直播簡介</string>
+    <string name="lspic">預告圖片</string>
+    <string name="lsdate">直播日期</string>
+    <string name="lstime">直播時間</string>
+    <string name="mustfill">必填</string>
 
 
     <string name="login">登入</string>
+    <string name="logout">登出</string>
 
     <string name="forget_pw">忘記密碼?</string>
     <string name="sign_up">註冊新帳號</string>
-
+    <string name="msg_NotUploadWithoutPicture">Not upload without picture</string>
+    <string name="msg_NoCameraApp">No camera app found</string>
     <string name="msg_BooksNotFound">Books not found</string>
     <string name="msg_InvalidUserOrPassword">Invalid user name or password</string>
     <string name="msg_UserIdExist">User ID exists</string>
@@ -49,10 +62,18 @@
     <string name="hint_etPassword">password</string>
     <string name="hint_etUrl">Server URL</string>
 
+    <string name="text_NotGranted">not granted</string>
     <string name="text_etName">Name</string>
     <string name="text_etEmail">Email</string>
     <string name="text_tvUrl">Server URL</string>
     <string name="text_btnSubmit">Submit</string>
+    <string name="text_tvDate">Date</string>
+    <string name="text_tvTime">Time</string>
+    <string name="text_btnDatePicker">Date picker</string>
+    <string name="text_btnTimePicker">Time Picker</string>
+    <string name="text_Title">直播標題</string>
+    <string name="text_Intro">直播介紹</string>
+
 
 
     <!-- TODO: Remove or change this placeholder text -->
