@@ -19,8 +19,6 @@ import com.example.livestream.R;
 import com.example.livestream.main.Util;
 import com.example.livestream.task.CommonTask;
 
-import org.json.JSONObject;
-
 public class signUpActivity extends AppCompatActivity {
 
     private static final String TAG = "signUpActivity";

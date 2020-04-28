@@ -6,16 +6,23 @@ import android.content.Context;
 import android.graphics.BitmapFactory;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.util.Log;
 import android.widget.Toast;
 
-import java.util.ArrayList;
+import com.example.livestream.ws.ChatWebSocketClient;
 
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.util.ArrayList;
 
 
 public class Util {
     // 模擬器連Tomcat
     public static String URL = "http://10.0.2.2:8081/DA106_G4/";
-//    public static String URL = "http://172.20.10.6:8081/DA106_G4/";
+//    public static String URL = "http://172.20.10.6:8081/DA106_G4/";//My phone
+//    public static String URL = "http://172.20.10.2:8081/DA106_G4/";//Tibame
+
+    public static ChatWebSocketClient chatWebSocketClient;
 
     // 偏好設定檔案名稱
     public final static String PREF_FILE = "preference";
@@ -40,10 +47,35 @@ public class Util {
     }
 
 
-    public static void showToast(Context context, int messageResId) {
-        Toast.makeText(context, messageResId, Toast.LENGTH_SHORT).show();
+    public static void showToast(Context context, String message) {
+        Toast.makeText(context, message, Toast.LENGTH_SHORT).show();
     }
 
+    public static void showToast(Context context, int stringId) {
+        Toast.makeText(context, stringId, Toast.LENGTH_SHORT).show();
+    }
+
+    // 建立WebSocket連線
+//    public static void connectServer(Context context, String userName) {
+//        URI uri = null;
+//        try {
+//            uri = new URI(SERVER_URI + userName);
+//        } catch (URISyntaxException e) {
+//            Log.e(TAG, e.toString());
+//        }
+//        if (chatWebSocketClient == null) {
+//            chatWebSocketClient = new ChatWebSocketClient(uri, context);
+//            chatWebSocketClient.connect();
+//        }
+//    }
+
+    // 中斷WebSocket連線
+//    public static void disconnectServer() {
+//        if (chatWebSocketClient != null) {
+//            chatWebSocketClient.close();
+//            chatWebSocketClient = null;
+//        }
+//    }
 
     //縮圖方法
     /*

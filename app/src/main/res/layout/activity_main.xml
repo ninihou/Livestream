@@ -17,17 +17,54 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
+    <Button
+        android:id="@+id/btMember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="500dp"
+        android:layout_marginBottom="100dp"
+        android:onClick="onMemberClick"
+        android:text="Member"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/scrollView2"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+    <Button
+        android:id="@+id/btnLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:text="LightBox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="413dp"
         android:layout_height="666dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="52dp"
+                android:layout_marginEnd="31dp"
+                android:layout_marginBottom="19dp"
+                android:hint="User Name"
+                app:layout_constraintBottom_toTopOf="@+id/idsv"
+                app:layout_constraintEnd_toStartOf="@+id/btnLogin"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <Button
                 android:id="@+id/btnLogin"
@@ -44,8 +81,8 @@
 
             <SearchView
                 android:id="@+id/idsv"
-                android:layout_width="387dp"
-                android:layout_height="23dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
                 android:layout_marginTop="39dp"
                 android:layout_marginEnd="12dp"
@@ -60,12 +97,12 @@
 
             <TextView
                 android:id="@+id/lsArea"
-                android:layout_width="185dp"
-                android:layout_height="21dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="1dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="210dp"
-                android:layout_marginBottom="9dp"
+                android:layout_marginBottom="10dp"
                 android:text="@string/lsArea"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 app:layout_constraintBottom_toTopOf="@+id/adRecycleView"
@@ -79,7 +116,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="48dp"
-                android:layout_marginTop="13dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginEnd="149dp"
                 android:onClick="onLogoutClick"
                 android:text="@string/logout"
@@ -90,29 +127,16 @@
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/adRecycleView"
-                android:layout_width="408dp"
-                android:layout_height="212dp"
-                android:layout_marginTop="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintHorizontal_bias="0.4"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/lsArea" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="13dp"
-        android:layout_marginEnd="170dp"
-        android:layout_marginBottom="39dp"
-        android:onClick="onLogoutClick"
-        android:text="@string/logout"
-        app:layout_constraintBottom_toTopOf="@+id/idsv"
-        app:layout_constraintEnd_toStartOf="@+id/btnLogin"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

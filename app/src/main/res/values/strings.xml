@@ -1,4 +1,5 @@
 <resources>
+    <string name="hiUser">Hi,</string>
     <string name="dtime">日期時間</string>
     <string name="app_name">直播</string>
     <string name="search_hint">搜尋廚師或直播</string>
@@ -73,8 +74,22 @@
     <string name="text_btnTimePicker">Time Picker</string>
     <string name="text_Title">直播標題</string>
     <string name="text_Intro">直播介紹</string>
+    <string name="text_Send">Send</string>
+    <string name="text_Connect">Connect</string>
+    <string name="text_Disconnect">Disconnect</string>
+    <string name="text_MessageEmpty">Message is empty!</string>
+    <string name="text_LeftChatRoom">Left chat room</string>
+    <string name="text_Name">User Name</string>
+    <string name="text_AllChat">All Chat</string>
+    <string name="text_TwoChat">Two Chat</string>
 
+    <string name="donate_apple">您對廚師斗內了蘋果</string>
+    <string name="donate_carrot">您對廚師斗內了蘿蔔</string>
+    <string name="donate_pizza">您對廚師斗內了披薩</string>
+    <string name="donate_donut">您對廚師斗內了甜甜圈</string>
 
+    <string name="dialog_title">斗內系統</string>
+    <string name="dialog_light">燈箱</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
