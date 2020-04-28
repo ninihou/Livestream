@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.example.livestream.main.LiveChatActivity">
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="435dp"
+        android:layout_height="622dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/ivApple"
+        android:layout_width="106dp"
+        android:layout_height="93dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="800dp"
+        app:srcCompat="@drawable/apple" />
+
+    <ImageView
+        android:id="@+id/ivCarrot"
+        android:layout_width="186dp"
+        android:layout_height="239dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="-220dp"
+        android:layout_marginTop="150dp"
+        app:srcCompat="@drawable/carrot" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etMessage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/btSend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="clickSend"
+                android:text="@string/text_Send"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnDonate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Donate"
+                android:layout_marginLeft="250dp"/>
+
+            <Button
+                android:id="@+id/btConnect"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="clickConnect"
+                android:text="連線" />
+
+            <Button
+                android:id="@+id/btDisconnect"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="clickDisconnect"
+                android:text="斷線" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="384dp"
+        android:layout_height="115dp"
+        android:layout_above="@id/linearLayout">
+
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp" />
+    </ScrollView>
+
+</RelativeLayout>

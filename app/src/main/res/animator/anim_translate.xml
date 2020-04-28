@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    「duration="500"」播放500毫秒，就是0.5秒；
+    「interpolator="@android:interpolator/accelerate_decelerate"」特效設定為先加速後減速
+    「propertyName="translationX"」代表水平位移
+    「repeatCount="1"」重複播放1次；
+    「repeatMode="reverse"」代表播放完畢後會反向播放；
+    「valueFrom="0"」與「valueTo="800"」從原點向右移動800像素
+-->
+<objectAnimator xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="1000"
+    android:interpolator="@android:interpolator/accelerate_decelerate"
+    android:propertyName="translationY"
+    android:repeatCount="1"
+    android:repeatMode="reverse"
+    android:valueFrom="-100"
+    android:valueTo="-1000" />
